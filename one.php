@@ -95,7 +95,7 @@
         }
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $username = $_POST['username'];
+            $username = $_POST['userdata'];
             $email = $_POST['email'];
 
             $sql = "INSERT INTO users (username, email) VALUES ('$username', '$email')";
